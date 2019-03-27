@@ -35,14 +35,12 @@ slowMath.add(6, 2)
         return slowMath.add(val, 32)
     }).then((add32) => {
         console.log(`Adding 32 to 35 is ${add32}`);
+        console.log(`The final result of these operations is ${add32}!`); 
 
-        //Wait on the result, and then log: The final result is ___, where you fill in the blank with the final result.
-    }).then((add32) => {
-        console.log(`The final result is ${add32}`);
-
-
-
-
+        }).catch((err) => {
+            console.log("Issue has been found.");
+            console.log(err);
+        })
 
 
 
@@ -54,4 +52,11 @@ slowMath.add(6, 2)
 
 
 
-    })
+
+
+
+
+
+
+
+
